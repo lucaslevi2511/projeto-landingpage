@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+header {
+    display: flex; 
+    justify-content: space-around; 
+    & img {
+        margin-top: 2vh;
+    }
+    & nav{
+        display: flex;
+        gap: 5vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vh;
+        & ul {
+            display: flex;
+            gap: 3vh;
+            & li {
+                & a{
+                    color: black;
+                    text-decoration: none;
+                    transition-duration: 500ms;
+                    &:hover {
+                        color: #72ABFE;
+                    }
+                }
+            }
+        }
+        & button {
+            height: 6vh;
+            width: 12vh;
+            background-color: #0D6EFD;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+    }   
+}
