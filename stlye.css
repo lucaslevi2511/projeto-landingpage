@@ -1,36 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
     list-style: none;
 }
+
+
 header {
-    display: flex; 
-    justify-content: space-around; 
+    display: flex;
+    justify-content: space-around;
+
     & img {
         margin-top: 2vh;
     }
-    & nav{
+
+    & nav {
         display: flex;
         gap: 5vh;
         justify-content: center;
         align-items: center;
         margin-top: 1vh;
+
         & ul {
             display: flex;
             gap: 3vh;
+
             & li {
-                & a{
+                & a {
                     color: black;
                     text-decoration: none;
                     transition-duration: 500ms;
+                    font-weight: 200;
+
                     &:hover {
                         color: #72ABFE;
                     }
                 }
             }
         }
+
         & button {
             height: 6vh;
             width: 12vh;
@@ -39,5 +48,277 @@ header {
             cursor: pointer;
             color: white;
         }
-    }   
+    }
+}
+
+#middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18vh;
+    margin-left: 18vh;
+
+    & #texto {
+        & #update {
+            display: flex;
+            margin-bottom: 1vh;
+
+            & img {
+                height: 2vh;
+            }
+
+            & h5 {
+                font-size: 1.5vh;
+            }
+        }
+
+        & #title {
+            & h1 {
+                font-size: 8vh;
+            }
+
+            & #final {
+                display: flex;
+                gap: 1vh;
+
+                & #web {
+                    color: #F4284A;
+                }
+            }
+        }
+
+        & #subText {
+            font-weight: 700;
+            font-size: 2vh;
+            margin-top: 3vh;
+
+            & #firstline {
+                display: flex;
+                gap: 0.5vh;
+            }
+
+            & #secondline {
+                display: flex;
+                gap: 0.5vh;
+            }
+
+            & #thirdline {
+                display: flex;
+                gap: 0.5vh;
+            }
+
+            & #tBlue {
+                color: #1371FD;
+            }
+        }
+    }
+}
+
+#btnbuy {
+    margin-top: 4vh;
+    height: 5vh;
+    width: 20vh;
+    background-color: #FFC107;
+    border-radius: 6px;
+}
+
+#thirdblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & #details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4vh;
+
+        & button {
+            background-color: #D1E7DD;
+            height: 4vh;
+            width: 15vh;
+            border-radius: 5px;
+            color: #336C51;
+            font-weight: 700;
+            margin-bottom: 1vh;
+        }
+
+        & span {
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+            height: 0.5vh;
+            width: 14vh;
+            background: linear-gradient(45deg, #D9489A, #332FD2);
+            border-radius: 30px;
+        }
+    }
+
+    & #Cards {
+        display: flex;
+        gap: 10vh;
+        height: 35vh;
+
+        & #card {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 18rem;
+            border: #e3e3e3 solid 2px;
+            border-radius: 8px;
+
+            & #imgcard {
+                height: 20vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & img {
+                    height: 12vh;
+
+                    & #gupimg {
+                        height: 10vh;
+                    }
+                }
+
+            }
+
+            & #cardtext {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                & h3 {
+                    font-size: 3vh;
+                }
+
+                & p {
+                    color: #C5C7D5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+
+    }
+}
+
+#fourthblock {
+    height: 60vh;
+    margin-top: 10vh;
+
+    & div {
+        background-image: linear-gradient(90deg, #D9489A, #332FD2);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & h1 {
+            color: white;
+        }
+    }
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151E2E;
+    height: 80vh;
+    gap: 20vh;
+    & h3 {
+        color: white;
+        font-size: 3vh;
+    }
+    & #FooterLeft {
+        & #About {
+            margin-top: 15vh;
+        }
+        & p{
+            color: #7D839E;
+            font-size: 2vh;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+        }
+
+    }
+    & #FooterCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & h3 {
+            margin-top: 16vh;
+        }
+        & ul {
+            margin-top: 2vh;
+            & li{
+                margin-right: 8vh;
+                margin-bottom: 1.5vh;
+                & a {
+                    text-decoration: none;
+                    color: #8F939B;
+                    transition-duration: 400ms;
+                    &:hover{
+                        text-decoration: underline;
+                        color: rgb(128, 128, 128);
+                    }
+                }
+            }
+            
+        }
+    }
+    & #FooterRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        & #Download {
+            & h3 {
+                margin-top: 16.5vh;
+                margin-bottom: 2vh;
+            }
+            & a {
+                & img {
+                    height: 20vh;
+                }
+            }
+        }
+        & #Newsletter {
+                     
+            & h4 {
+                color: white;
+                font-size: 3vh;
+                margin-top: 2vh;  
+                margin-bottom: 4vh;
+            }
+            & form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                & input {
+                    height: 6vh;
+                    border-radius: 6px;
+                    padding: 2vh;
+                    margin-bottom: 2vh;
+                }
+                & button {
+                    height: 5vh;
+                    width: 20vh;
+                    background-color: #FFC107;
+                    border-radius: 6px;
+                }
+                
+            }
+        }
+
+    }
 }
